@@ -50,7 +50,7 @@
     margin-right: 48px;
 }
 
-.contact-info__messangers__icons_container {
+.messangers__icons-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +101,7 @@
 
 /* MAIN */
 
-.carusel_container {
+.carusel-container {
     display: flex;
     justify-content: center;
 }
@@ -118,14 +118,14 @@
 
 }
 
-.carusel__slide_title {
+.carusel__slide-title {
     color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: bold;
     padding-bottom: 40px;
 }
 
-.carusel__slide_btns-group {
+.carusel__slide-btns-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +142,7 @@
     border-radius: 8px;
 }
 
-.carusel__slide_arrows {
+.carusel__slide-arrows {
     width: 41px;
     height: 40px;
     background-color: rgb(255, 255, 255);
@@ -151,38 +151,38 @@
     border-radius: 8px;
 }
 
-.carusel__slide_arrow {
+.carusel__slide-arrow {
     width: 20px;
     height: 19px;
 }
 
-.section_title {
+.section-title {
     position: relative;
     margin-top: 55px;
     font-size: 25px;
     font-weight: bold;
 }
 
-.novelties_item_link {
+.novelties__item-link {
     text-decoration: none;
     color: rgb(25, 25, 25);
 }
 
-.novelties_img {
+.novelties__img {
     width: 300px;
 }
 
-.novelties_items-container {
+.novelties__items-container {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
 }
 
-.novelties_item {
+.novelties__item {
     height: 267px;
 }
 
-.novelties_item_border {
+.novelties__item-border {
     position: relative;
     z-index: -1;
     top: -300px;
@@ -192,11 +192,11 @@
     border: 1px solid rgb(25, 25, 25);
   } 
 
-  .novelties_item:hover .novelties_item_border {
+  .novelties__item:hover .novelties__item-border {
     border: 2px solid rgb(185, 0, 0);
   }
 
-.novelties_item_title {
+.novelties__item-title {
     font-size: 19px;
     font-weight: bold;
 }
@@ -209,14 +209,14 @@
     grid-row-gap: 3em;
 }
 
-.categories_item_wrapper {
+.categories__item-wrapper {
     display: flex;
     width: 390px;
     height: 251px;
     background-color: rgb(220, 220, 220);
 }
 
-.categories_item_image {
+.categories__item-image {
     display: none;
    position: absolute;
    background: rgba(185, 0, 0, 0.4);
@@ -224,33 +224,33 @@
    height: 251px;
 }
 
-.categories_item_wrapper:hover .categories_item_image {
+.categories__item-wrapper:hover .categories__item-image {
     display: block;
 }
 
-.categories_item_container {
+.categories_item-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 15px;
 }
 
-.categories_item_icon {
+.categories_item-icon {
     width: 28px;
     height: 24px;
 }
 
-.categories_item_title {
+.categories_item-title {
     font-size: 20px;
     line-height: 24.95px;
     font-weight: bold;
 }
 
-.categories_item_wrapper:hover .categories_item_title {
+.categories__item-wrapper:hover .categories_item-title {
     color: rgb(185, 0, 0);
 }
 
-.categories_item_btn {
+.categories_item-btn {
     display: flex;
     align-items: center;
     border: none;
@@ -262,7 +262,7 @@
     color: rgb(185, 0, 0);
 }
 
-.categories_item_btn:hover {
+.categories_item-btn:hover {
     color: rgb(25, 25, 25);
 }
 .btn_icon {
@@ -272,29 +272,29 @@
 
 /* FOOTER */
 
-.contact-info_footer {
+.contact-info__footer {
     display: flex;
     height: auto;
     margin-top: 30px;
     align-items: baseline;
 }
 
-.footer_contact-info__contacts-container {
+.footer__contact-info__contacts-container {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.contact-info__footer__messangers__icons_container {
+.contact-info__footer__messangers__icons-container {
     background-color: rgb(255, 255, 255);
 }
 
-.footer_logo-rights_container {
+.footer__logo-rights-container {
     display: flex;
     flex-direction: column;
 }
 
-.footer_contact-info_container {
+.footer__contact-info-container {
     display: flex;
     flex-direction: row;
 }
@@ -312,7 +312,7 @@
     font-size: 15px;
 }
 
-.footer_info_requisites {
+.footer__info-requisites {
     display: flex;
     color: rgb(24, 24, 24);
     flex-direction: column;
