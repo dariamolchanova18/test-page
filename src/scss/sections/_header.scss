@@ -1,0 +1,144 @@
+.contact-info {
+    @include cover-display;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.contact-info__contacts-container {
+    @include cover-display;
+}
+
+.logo {
+    color: $red-color;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-info__contact-item {
+    @include cover-display;
+    justify-content: center;
+    padding-right: 48px;
+}
+.phone-icon {
+    width: 24px;
+    height: 22px;
+}
+
+.contacts-phone{
+    font-weight: bold;
+}
+
+.email-icon {
+    width: 22px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.contact-info__messangers{
+    display: flex;
+    margin-right: 48px;
+}
+
+.messangers__icons-container {
+    @include cover-display;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    background-color: $light-background;
+    margin-right: 11px;
+    border-radius: 8px;
+}
+
+.messangers-icons {
+    width: 26px;
+    height: 26px;
+}
+
+.btn-contact-with {
+    width: 180px;
+    height: 51px;
+    background-color: $red-color;
+    color: $btns-color;
+    border: none;
+    border-radius: 8px;
+}
+
+.header__menu-btn {
+    display: none;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: $basic-color;
+}
+
+.navbar__container {
+    @include cover-display;
+    justify-content: space-evenly;
+    height: 100px;
+}
+
+.navbar-item {
+    list-style-type: none;
+    font-size: 25px;
+    text-align: center;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: black;
+    color: $btns-color;
+}
+
+@media (max-width: 1024px) { 
+    .navbar-item {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-info {
+        justify-content: flex-start;
+    }
+
+    .contact-info__contacts {
+        display: none;
+    }
+
+    .btn-contact-with {
+        display: none;
+    }
+
+    .header__menu-btn {
+        display: block;
+        position: relative;
+        width: 44px;
+        height: 37px;
+    }
+
+    .close-icon-wrapper {
+        position: absolute;
+        text-align: center;
+        width: 30px;
+        height: 25px;
+    
+        &--disabled {
+            display: none;
+        }
+    }
+
+    .navbar__container {
+        display: none;
+        background-color: rgba(245, 245, 245, 1);
+        margin-top: 37px;
+    }
+    
+    .navbar__container--isActive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+    
+}

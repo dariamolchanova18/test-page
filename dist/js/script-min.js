@@ -1,0 +1,1 @@
+const e=document.querySelector(".header__menu-btn"),c=document.querySelector(".navbar__container"),n=document.querySelector(".close-icon-wrapper");e.addEventListener("click",function(){c.classList.toggle("navbar__container--isActive"),n.classList.toggle("close-icon-wrapper--disabled")});

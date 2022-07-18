@@ -1,0 +1,28 @@
+@import "./reset";
+@import "./mixines";
+@import "./variables";
+@import "./sections/header";
+@import "./sections/main";
+@import "./sections/footer";
+
+
+
+body {
+    min-width: 1200px;
+    font-family: $basic-font;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        max-width: 1024px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        max-width: 600px;
+    }
+
+}

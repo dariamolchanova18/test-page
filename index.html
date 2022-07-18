@@ -9,24 +9,326 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/style/reset.css" />
-    <link rel="stylesheet" href="src/style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fontawesome.com/icons/chevron-right?s=solid"
-    />
+    <link rel="stylesheet" href="dist/style/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f2064a4ea0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f44a97be0f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="full-page-font">
-      <header>
-        <section class="contact-info">
+    <header>
+      <section class="contact-info">
+        <div class="logo">LOGO</div>
+        <div class="contact-info__contacts-container">
+          <div class="contact-info__contacts">
+            <div class="contact-info__contact-item">
+              <img
+                class="phone-icon"
+                src="./src/images/icons/phone.png"
+                alt="phone"
+              />
+              <p class="contacts-phone">+1 234 567 89 10</p>
+            </div>
+            <div class="contact-info__contact-item">
+              <img
+                class="email-icon"
+                src="./src/images/icons/Email-Icon.png"
+                alt="email"
+              />
+              <p class="contacts-email">example@mail.ru</p>
+            </div>
+          </div>
+          <div class="contact-info__messangers">
+            <div class="messangers__icons-container">
+              <a href="#">
+                <img
+                  class="messangers-icons"
+                  src="./src/images/icons/whatsapp.png"
+                  alt="whatsapp-logo"
+                />
+              </a>
+            </div>
+            <div class="messangers__icons-container">
+              <a href="#">
+                <img
+                  class="messangers-icons"
+                  src="./src/images/icons/telegram.png"
+                  alt="telegram-logo"
+                />
+              </a>
+            </div>
+            <div class="messangers__icons-container">
+              <a href="#">
+                <img
+                  class="messangers-icons"
+                  src="./src/images/icons/viber.png"
+                  alt="viber-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <button class="btn-contact-with">СВЯЗАТЬСЯ</button>
+        </div>
+        <button class="header__menu-btn">
+          <i class="fas fa-bars icon-color"></i>
+          <div class="close-icon-wrapper close-icon-wrapper--disabled">
+            <i class="fas fa-times icon-color"></i>
+          </div>
+        </button>
+      </section>
+      <section class="navbar">
+        <ul class="navbar__container">
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Оборудование<br />новое</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Оборудование<br />Б/У</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Комплектующие<br />прессов ММО</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#"
+              >Комплектующие<br />упаковочных машин</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Изготовление<br />деталей</a>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <main>
+      <div class="carusel-container">
+        <section class="carusel">
+          <p class="carusel__slide-title">ЗАГОЛОВОК СЛАЙДА</p>
+          <div class="slide-btns-group">
+            <button class="info-btn">ПОДРОБНЕЕ</button>
+            <div class="arrows-btns-group">
+              <button class="arrows">
+                <img
+                  class="arrow"
+                  src="./src/images/icons/left-arrow.png"
+                  alt="left-arrow"
+                />
+              </button>
+              <button class="arrows">
+                <img
+                  class="arrow"
+                  src="./src/images/icons/right-arrow.png"
+                  alt="right-arrrow"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="novelties">
+        <p class="section-title">НОВИНКИ</p>
+        <hr class="solid" />
+        <div class="novelties__items-container">
+          <div class="novelties__item">
+            <a class="novelties__item-link" href="#">
+              <img
+                class="novelties-img"
+                src="./src/images/img/novelties_img.jpeg"
+                alt="novelties__item"
+              />
+              <p class="novelties__item-title">Наименование товара | Услуга</p>
+              <div class="novelties__item-border"></div>
+            </a>
+          </div>
+          <div class="novelties__item">
+            <a class="novelties__item-link" href="#">
+              <img
+                class="novelties-img"
+                src="./src/images/img/novelties_img.jpeg"
+                alt="novelties__item"
+              />
+              <p class="novelties__item-title">Наименование товара | Услуга</p>
+              <div class="novelties__item-border"></div>
+            </a>
+          </div>
+          <div class="novelties__item">
+            <a class="novelties__item-link" href="#">
+              <img
+                class="novelties-img"
+                src="./src/images/img/novelties_img.jpeg"
+                alt="novelties__item"
+              />
+              <p class="novelties__item-title">Наименование товара | Услуга</p>
+              <div class="novelties__item-border"></div>
+            </a>
+          </div>
+          <div class="novelties__item">
+            <a class="novelties__item-link" href="#">
+              <img
+                class="novelties-img"
+                src="./src/images/img/novelties_img.jpeg"
+                alt="novelties__item"
+              />
+              <p class="novelties__item-title">Наименование товара | Услуга</p>
+              <div class="novelties__item-border"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <p class="section-title">КАТЕГОРИИ</p>
+        <hr class="solid" />
+
+        <div class="categories__items-container">
+          <div class="categories__item-wrapper">
+            <img src="./src/images/img/categorie_img.jpg" alt="#" />
+            <div class="categories__item-image"></div>
+            <div class="categories__item-container">
+              <img
+                class="categories__item-icon"
+                src="./src/images/icons/m-icon.png"
+                alt="#"
+              />
+              <p class="categories__item-title">ОБОРУДОВАНИЕ НОВОЕ</p>
+              <button class="categories__item-btn">
+                СМОТРЕТЬ
+                <img
+                  class="btn_icon"
+                  src="./src/images/icons/red-right-arrow.png"
+                  alt=">"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="categories__item-wrapper">
+            <img src="./src/images/img/categorie_img.jpg" alt="#" />
+            <div class="categories__item-image"></div>
+            <div class="categories__item-container">
+              <img
+                class="categories__item-icon"
+                src="./src/images/icons/m-icon.png"
+                alt="#"
+              />
+              <p class="categories__item-title">ОБОРУДОВАНИЕ Б/У</p>
+              <button class="categories__item-btn">
+                СМОТРЕТЬ
+                <img
+                  class="btn_icon"
+                  src="./src/images/icons/red-right-arrow.png"
+                  alt=">"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="categories__item-wrapper">
+            <img src="./src/images/img/categorie_img.jpg" alt="#" />
+            <div class="categories__item-image"></div>
+            <div class="categories__item-container">
+              <img
+                class="categories__item-icon"
+                src="./src/images/icons/m-icon.png"
+                alt="#"
+              />
+              <p class="categories__item-title">ЗАПАСНЫЕ ЧАСТИ</p>
+              <button class="categories__item-btn">
+                СМОТРЕТЬ
+                <img
+                  class="btn_icon"
+                  src="./src/images/icons/red-right-arrow.png"
+                  alt=">"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="categories__item-wrapper">
+            <img src="./src/images/img/categorie_img.jpg" alt="#" />
+            <div class="categories__item-image"></div>
+            <div class="categories__item-container">
+              <img
+                class="categories__item-icon"
+                src="./src/images/icons/m-icon.png"
+                alt="#"
+              />
+              <p class="categories__item-title">ИЗГОТОВЛЕНИЕ</p>
+              <button class="categories__item-btn">
+                СМОТРЕТЬ
+                <img
+                  class="btn_icon"
+                  src="./src/images/icons/red-right-arrow.png"
+                  alt=">"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="categories__item-wrapper">
+            <img src="./src/images/img/categorie_img.jpg" alt="#" />
+            <div class="categories__item-image"></div>
+            <div class="categories__item-container">
+              <img
+                class="categories__item-icon"
+                src="./src/images/icons/m-icon.png"
+                alt="#"
+              />
+              <p class="categories__item-title">
+                РЕМОНТ КОМПЛЕКТУЮЩИХ ДЛЯ ПРЕССОВ МОМ
+              </p>
+              <button class="categories__item-btn">
+                СМОТРЕТЬ
+                <img
+                  class="btn_icon"
+                  src="./src/images/icons/red-right-arrow.png"
+                  alt=">"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="categories__item-wrapper">
+            <img src="./src/images/img/categorie_img.jpg" alt="#" />
+            <div class="categories__item-image"></div>
+            <div class="categories__item-container">
+              <img
+                class="categories__item-icon"
+                src="./src/images/icons/m-icon.png"
+                alt="#"
+              />
+              <p class="categories__item-title">НИШИ ПРОИЗВОДСТВА</p>
+              <button class="categories__item-btn">
+                СМОТРЕТЬ
+                <img
+                  class="btn_icon"
+                  src="./src/images/icons/red-right-arrow.png"
+                  alt=">"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="contact-info contact-info__footer">
+        <div class="footer__logo-rights-container">
           <div class="logo">LOGO</div>
-          <div class="contact-info__contacts-container">
+          <p class="all-rights-reserved">
+            2021 © SiteName.com. Все права защищены
+          </p>
+        </div>
+        <div class="footer__contact-info-container">
+          <div class="footer__contacts-container">
             <div class="contact-info__contacts">
               <div class="contact-info__contact-item">
                 <img
                   class="phone-icon"
-                  src="src/images/icons/phone.png"
+                  src="./src/images/icons/phone.png"
                   alt="phone"
                 />
                 <p class="contacts-phone">+1 234 567 89 10</p>
@@ -34,360 +336,59 @@
               <div class="contact-info__contact-item">
                 <img
                   class="email-icon"
-                  src="src/images/icons/Email-Icon.png"
+                  src="./src/images/icons/Email-Icon.png"
                   alt="email"
                 />
                 <p class="contacts-email">example@mail.ru</p>
               </div>
             </div>
-            <div class="contact-info__messangers">
-              <div class="messangers__icons-container">
-                <a href="#">
-                  <img
-                    class="messangers-icons"
-                    src="src/images/icons/whatsapp.png"
-                    alt="whatsapp-logo"
-                  />
-                </a>
-              </div>
-              <div class="messangers__icons-container">
-                <a href="#">
-                  <img
-                    class="messangers-icons"
-                    src="src/images/icons/telegram.png"
-                    alt="telegram-logo"
-                  />
-                </a>
-              </div>
-              <div class="messangers__icons-container">
-                <a href="#">
-                  <img
-                    class="messangers-icons"
-                    src="src/images/icons/viber.png"
-                    alt="viber-logo"
-                  />
-                </a>
-              </div>
+            <div class="footer__info-requisites">
+              <p>Адрес</p>
+              <p>Адрес</p>
+              <p>Реквизиты</p>
             </div>
-            <button class="btn-contact-with">СВЯЗАТЬСЯ</button>
           </div>
-        </section>
-        <section class="navbar">
-          <ul class="navbar__container">
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Оборудование<br />новое</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Оборудование<br />Б/У</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Комплектующие<br />прессов ММО</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#"
-                >Комплектующие<br />упаковочных машин</a
-              >
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Изготовление<br />деталей</a>
-            </li>
-          </ul>
-        </section>
-      </header>
-
-      <main>
-        <div class="carusel-container">
-          <section class="carusel">
-            <p class="carusel__slide-title">ЗАГОЛОВОК СЛАЙДА</p>
-            <div class="slide-btns-group">
-              <button class="info-btn">ПОДРОБНЕЕ</button>
-              <div class="arrows-btns-group">
-                <button class="arrows">
-                  <img
-                    class="arrow"
-                    src="src/images/icons/left-arrow.png"
-                    alt="left-arrow"
-                  />
-                </button>
-                <button class="arrows">
-                  <img
-                    class="arrow"
-                    src="src/images/icons/right-arrow.png"
-                    alt="right-arrrow"
-                  />
-                </button>
-              </div>
+          <div class="contact-info__messangers">
+            <div
+              class="messangers__icons-container footer__messangers-icons-container"
+            >
+              <a href="#">
+                <img
+                  class="messangers-icons"
+                  src="./src/images/icons/whatsapp.png"
+                  alt="whatsapp-logo"
+                />
+              </a>
             </div>
-          </section>
+            <div
+              class="messangers__icons-container footer__messangers-icons-container"
+            >
+              <a href="#">
+                <img
+                  class="messangers-icons"
+                  src="./src/images/icons/telegram.png"
+                  alt="telegram-logo"
+                />
+              </a>
+            </div>
+            <div
+              class="messangers__icons-container footer__messangers-icons-container"
+            >
+              <a href="#">
+                <img
+                  class="messangers-icons"
+                  src="./src/images/icons/viber.png"
+                  alt="viber-logo"
+                />
+              </a>
+            </div>
+          </div>
+          <button class="btn-contact-with">СВЯЗАТЬСЯ</button>
         </div>
+      </section>
+      <div class="footer_info"></div>
+    </footer>
 
-        <section class="novelties">
-          <p class="section-title">НОВИНКИ</p>
-          <hr class="solid" />
-          <div class="novelties__items-container">
-            <div class="novelties__item">
-              <a class="novelties__item-link" href="#">
-                <img
-                  class="novelties-img"
-                  src="src/images/img/novelties_img.jpeg"
-                  alt="novelties__item"
-                />
-                <p class="novelties__item-title">
-                  Наименование товара | Услуга
-                </p>
-                <div class="novelties__item-border"></div>
-              </a>
-            </div>
-            <div class="novelties__item">
-              <a class="novelties__item-link" href="#">
-                <img
-                  class="novelties-img"
-                  src="src/images/img/novelties_img.jpeg"
-                  alt="novelties__item"
-                />
-                <p class="novelties__item-title">
-                  Наименование товара | Услуга
-                </p>
-                <div class="novelties__item-border"></div>
-              </a>
-            </div>
-            <div class="novelties__item">
-              <a class="novelties__item-link" href="#">
-                <img
-                  class="novelties-img"
-                  src="src/images/img/novelties_img.jpeg"
-                  alt="novelties__item"
-                />
-                <p class="novelties__item-title">
-                  Наименование товара | Услуга
-                </p>
-                <div class="novelties__item-border"></div>
-              </a>
-            </div>
-            <div class="novelties__item">
-              <a class="novelties__item-link" href="#">
-                <img
-                  class="novelties-img"
-                  src="src/images/img/novelties_img.jpeg"
-                  alt="novelties__item"
-                />
-                <p class="novelties__item-title">
-                  Наименование товара | Услуга
-                </p>
-                <div class="novelties__item-border"></div>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="categories">
-          <p class="section-title">КАТЕГОРИИ</p>
-          <hr class="solid" />
-
-          <div class="categories__items-container">
-            <div class="categories__item-wrapper">
-              <img src="src/images/img/categorie_img.jpg" alt="#" />
-              <div class="categories__item-image"></div>
-              <div class="categories__item-container">
-                <img
-                  class="categories__item-icon"
-                  src="src/images/icons/m-icon.png"
-                  alt="#"
-                />
-                <p class="categories__item-title">ОБОРУДОВАНИЕ НОВОЕ</p>
-                <button class="categories__item-btn">
-                  СМОТРЕТЬ
-                  <img
-                    class="btn_icon"
-                    src="src/images/icons/red-right-arrow.png"
-                    alt=">"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="categories__item-wrapper">
-              <img src="src/images/img/categorie_img.jpg" alt="#" />
-              <div class="categories__item-image"></div>
-              <div class="categories__item-container">
-                <img
-                  class="categories__item-icon"
-                  src="src/images/icons/m-icon.png"
-                  alt="#"
-                />
-                <p class="categories__item-title">ОБОРУДОВАНИЕ Б/У</p>
-                <button class="categories__item-btn">
-                  СМОТРЕТЬ
-                  <img
-                    class="btn_icon"
-                    src="src/images/icons/red-right-arrow.png"
-                    alt=">"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="categories__item-wrapper">
-              <img src="src/images/img/categorie_img.jpg" alt="#" />
-              <div class="categories__item-image"></div>
-              <div class="categories__item-container">
-                <img
-                  class="categories__item-icon"
-                  src="src/images/icons/m-icon.png"
-                  alt="#"
-                />
-                <p class="categories__item-title">ЗАПАСНЫЕ ЧАСТИ</p>
-                <button class="categories__item-btn">
-                  СМОТРЕТЬ
-                  <img
-                    class="btn_icon"
-                    src="src/images/icons/red-right-arrow.png"
-                    alt=">"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="categories__item-wrapper">
-              <img src="src/images/img/categorie_img.jpg" alt="#" />
-              <div class="categories__item-image"></div>
-              <div class="categories__item-container">
-                <img
-                  class="categories__item-icon"
-                  src="src/images/icons/m-icon.png"
-                  alt="#"
-                />
-                <p class="categories__item-title">ИЗГОТОВЛЕНИЕ</p>
-                <button class="categories__item-btn">
-                  СМОТРЕТЬ
-                  <img
-                    class="btn_icon"
-                    src="src/images/icons/red-right-arrow.png"
-                    alt=">"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="categories__item-wrapper">
-              <img src="src/images/img/categorie_img.jpg" alt="#" />
-              <div class="categories__item-image"></div>
-              <div class="categories__item-container">
-                <img
-                  class="categories__item-icon"
-                  src="src/images/icons/m-icon.png"
-                  alt="#"
-                />
-                <p class="categories__item-title">
-                  РЕМОНТ КОМПЛЕКТУЮЩИХ ДЛЯ ПРЕССОВ МОМ
-                </p>
-                <button class="categories__item-btn">
-                  СМОТРЕТЬ
-                  <img
-                    class="btn_icon"
-                    src="src/images/icons/red-right-arrow.png"
-                    alt=">"
-                  />
-                </button>
-              </div>
-            </div>
-
-            <div class="categories__item-wrapper">
-              <img src="src/images/img/categorie_img.jpg" alt="#" />
-              <div class="categories__item-image"></div>
-              <div class="categories__item-container">
-                <img
-                  class="categories__item-icon"
-                  src="src/images/icons/m-icon.png"
-                  alt="#"
-                />
-                <p class="categories__item-title">НИШИ ПРОИЗВОДСТВА</p>
-                <button class="categories__item-btn">
-                  СМОТРЕТЬ
-                  <img
-                    class="btn_icon"
-                    src="src/images/icons/red-right-arrow.png"
-                    alt=">"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <section class="contact-info contact-info__footer">
-          <div class="footer__logo-rights-container">
-            <div class="logo">LOGO</div>
-            <p class="all-rights-reserved">
-              2021 © SiteName.com. Все права защищены
-            </p>
-          </div>
-          <div class="footer__contact-info-container">
-            <div class="footer__contacts-container">
-              <div class="contact-info__contacts">
-                <div class="contact-info__contact-item">
-                  <img
-                    class="phone-icon"
-                    src="src/images/icons/phone.png"
-                    alt="phone"
-                  />
-                  <p class="contacts-phone">+1 234 567 89 10</p>
-                </div>
-                <div class="contact-info__contact-item">
-                  <img
-                    class="email-icon"
-                    src="src/images/icons/Email-Icon.png"
-                    alt="email"
-                  />
-                  <p class="contacts-email">example@mail.ru</p>
-                </div>
-              </div>
-              <div class="footer__info-requisites">
-                <p>Адрес</p>
-                <p>Адрес</p>
-                <p>Реквизиты</p>
-              </div>
-            </div>
-            <div class="contact-info__messangers">
-              <div
-                class="messangers__icons-container footer__messangers-icons-container"
-              >
-                <a href="#">
-                  <img
-                    class="messangers-icons"
-                    src="src/images/icons/whatsapp.png"
-                    alt="whatsapp-logo"
-                  />
-                </a>
-              </div>
-              <div
-                class="messangers__icons-container footer__messangers-icons-container"
-              >
-                <a href="#">
-                  <img
-                    class="messangers-icons"
-                    src="src/images/icons/telegram.png"
-                    alt="telegram-logo"
-                  />
-                </a>
-              </div>
-              <div
-                class="messangers__icons-container footer__messangers-icons-container"
-              >
-                <a href="#">
-                  <img
-                    class="messangers-icons"
-                    src="src/images/icons/viber.png"
-                    alt="viber-logo"
-                  />
-                </a>
-              </div>
-            </div>
-            <button class="btn-contact-with">СВЯЗАТЬСЯ</button>
-          </div>
-        </section>
-        <div class="footer_info"></div>
-      </footer>
-    </div>
+    <script src="./dist/js/script-min.js"></script>
   </body>
 </html>
